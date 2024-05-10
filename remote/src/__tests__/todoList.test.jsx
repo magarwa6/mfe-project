@@ -3,7 +3,7 @@ import { render, screen, fireEvent } from '@testing-library/react';
 import TodoList from '../TodoList';
 
 describe('TodoList', () => {
-  it.only('renders the input and initial todo list', () => {
+  it('renders the input and initial todo list', () => {
     render(<TodoList />);
     
     // Verify that the input element is rendered
@@ -34,6 +34,6 @@ describe('TodoList', () => {
     expect(todoDescription).toBeInTheDocument();
   });
 
-  // Write additional test cases for other functionality, such as toggling todo status and filtering todo list
+
 });
 
